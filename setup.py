@@ -27,7 +27,7 @@ setup(
         "Programming Language :: Python :: 3.7",
         'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
     ],
-    keywords="CSV JSON TSV import django fixture",
+    keywords="django taggit admin bulk",
     license='LGPL',
     packages=['taggit_bulk'],
     package_data={
