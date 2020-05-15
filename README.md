@@ -4,7 +4,7 @@
 
 # Django Taggit Bulk
 
-The [Django Taggit Bulk](https://github.com/nnseva/django-taggit-bulk) package provides an admin action to tag or untag selected instances from the model admin list page.
+The [Django Taggit Bulk](https://github.com/nnseva/django-taggit-bulk) package provides an admin action to tag or untag selected instances from the model admin list page. It uses tagging system implemented by the [Django Taggit](https://django-taggit.readthedocs.io/en/latest/index.html) package.
 
 ## Installation
 
@@ -95,7 +95,7 @@ When adding, if the tag already present for a separate instance, nothing happens
 
 You can add or clear several tags together, just enlist them in a dialog separating by the comma.
 
-The tags input string behaves exactly the same as for the [taggit package](https://django-taggit.readthedocs.io/en/latest/index.html).
+The tags input string behaves exactly the same as for the [Django Taggit](https://django-taggit.readthedocs.io/en/latest/index.html) package.
 
 ## Customization
 
