@@ -103,7 +103,7 @@ The tags input string behaves exactly the same as for the [taggit package](https
 
 You can setup `TAGGIT_BULK_SETTINGS` attribute of the settings.py file in your project.
 
-```
+```python
 TAGGIT_BULK_SETTINGS = {
     'session_prefix': 'tag_wizard_data',
 }
@@ -141,3 +141,16 @@ class MyModelAdmin(ModelAdmin):
 
 admin.site.register(MyModel, MyModelAdmin)
 ```
+
+### Templating
+
+You can overload the form template for the tag wizard.
+
+Just install your own template named as one of the following:
+
+- `'taggit_bulk_wizard_form.html'`
+- `'taggit_bulk/wizard_form.html'`
+
+You also can use the original name of the template found in the package installing it in any application following the `taggit_bulk` in the `INSTALLED_APPS`, or in the common project template directory:
+
+- `'taggit_bulk/wizard/form.html'`
