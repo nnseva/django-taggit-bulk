@@ -85,6 +85,9 @@ class TaggitBulkWizard(SessionWizardView):
             'site_title': admin.site.site_title,
             'site_header': admin.site.site_header,
             'index_title': admin.site.index_title,
+            'has_permission': admin.site.has_permission(self.request),
+            'available_apps': admin.site.get_app_list(self.request),
+            'is_popup': False,
         })
         return context
 
