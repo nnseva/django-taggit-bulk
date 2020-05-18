@@ -1,0 +1,2 @@
+recursive-include taggit_bulk/*.py
+recursive-include taggit_bulk/*.html
