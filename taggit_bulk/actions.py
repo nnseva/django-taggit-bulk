@@ -1,13 +1,17 @@
 """Actions for the bulk_taggit"""
 
 from __future__ import print_function, absolute_import
+import sys
 
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-from django.utils.translation import ugettext_lazy as _
-
 from taggit_bulk import settings as default_settings
+
+if tuple(sys.version_info) < (3, 0, 0):
+    from django.utils.translation import ugettext_lazy as _
+else:
+    from django.utils.translation import gettext_lazy as _
 
 
 def tag_wizard(admin, request, queryset):

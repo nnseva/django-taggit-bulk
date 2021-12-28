@@ -1,11 +1,15 @@
 """Forms for taggit_bulk"""
 
 from __future__ import print_function, absolute_import
+import sys
 
 from django import forms
 from taggit.forms import TagField
 
-from django.utils.translation import ugettext_lazy as _
+if tuple(sys.version_info) < (3, 0, 0):
+    from django.utils.translation import ugettext_lazy as _
+else:
+    from django.utils.translation import gettext_lazy as _
 
 
 class TaggingForm(forms.Form):
