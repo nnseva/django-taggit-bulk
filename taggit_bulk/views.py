@@ -1,6 +1,7 @@
 """Views for taggit_bulk"""
 
 from __future__ import print_function, absolute_import
+import sys
 
 from django.conf import settings
 from django.core.exceptions import PermissionDenied
@@ -8,8 +9,12 @@ from django.contrib import messages
 from django.contrib.admin.utils import model_ngettext
 from django.contrib import admin
 from django.contrib.contenttypes.models import ContentType
-from django.utils.translation import ugettext_lazy as _
 from django.http import HttpResponseRedirect
+
+if tuple(sys.version_info) < (3, 0, 0):
+    from django.utils.translation import ugettext_lazy as _
+else:
+    from django.utils.translation import gettext_lazy as _
 
 from formtools.wizard.views import SessionWizardView
 
