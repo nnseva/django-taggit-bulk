@@ -1,6 +1,4 @@
-[![Build Status](https://api.travis-ci.com/nnseva/django-taggit-bulk.svg?branch=master)](https://travis-ci.com/github/nnseva/django-taggit-bulk)
-
-
+[![Tests](https://github.com/nnseva/django-taggit-bulk/actions/workflows/test.yml/badge.svg)](https://github.com/nnseva/django-taggit-bulk/actions/workflows/test.yml)
 
 # Django Taggit Bulk
 
